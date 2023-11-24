@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Toepassing</title>
+    <!-- Voeg de jQuery-bibliotheek toe (via CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Stijl toevoegen is optioneel */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JQuery Toepassing</h1>
+
+<p>Klik op de knop om een eenvoudige JQuery-actie uit te voeren:</p>
+
+<button id="myButton">Klik hier</button>
+
+<div id="result"></div>
+
+<script>
+    // jQuery-code
+    $(document).ready(function(){
+        // Voeg een klikgebeurtenis toe aan de knop
+        $("#myButton").click(function(){
+            // Voer een actie uit wanneer er op de knop wordt geklikt
+            $("#result").text("Hoi! Je hebt op de knop geklikt!");
+        });
+    });
+</script>
+
+</body>
+</html>
